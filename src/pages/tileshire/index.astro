@@ -1,0 +1,53 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+<Layout title="Tileshire" description="Tileshire – a card-based roguelike by Anton Bargman">
+  <style>
+    h1 { font-size: 2.2rem; font-weight: normal; color: #f0f0f0; margin-bottom: 0.3rem; }
+    .subtitle { color: #888; margin-bottom: 2.5rem; font-size: 0.95rem; }
+    section { margin-bottom: 2.5rem; }
+    h2 { font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; color: #555; margin-bottom: 0.8rem; }
+    p { color: #ccc; font-size: 0.97rem; max-width: 560px; }
+    .badge {
+      display: inline-block;
+      background: #1e1e1e;
+      border: 1px solid #333;
+      border-radius: 4px;
+      padding: 0.25rem 0.7rem;
+      font-size: 0.8rem;
+      color: #888;
+      margin-bottom: 1.5rem;
+    }
+    .links { margin-top: 2.5rem; display: flex; gap: 1.2rem; }
+    .links a { font-size: 0.88rem; color: #888; }
+    .links a:hover { color: #c8a96e; }
+  </style>
+
+  <h1>Tileshire</h1>
+  <p class="subtitle">A card-based roguelike</p>
+  <span class="badge">Early development</span>
+
+  <section>
+    <h2>About</h2>
+    <p>
+      Tileshire is a card-based roguelike where each run is built from a shifting deck
+      of tiles, encounters, and choices. No two runs are the same.
+    </p>
+  </section>
+
+  <section>
+    <h2>Status</h2>
+    <p>
+      The game is currently in early development. More details coming soon.
+    </p>
+  </section>
+
+  <section>
+    <h2>Platform</h2>
+    <p>Mobile (iOS &amp; Android). More platforms may follow.</p>
+  </section>
+
+  <div class="links">
+    <a href="/tileshire/privacy-policy">Privacy Policy</a>
+  </div>
+</Layout>

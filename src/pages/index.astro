@@ -1,0 +1,43 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Anton Bargman">
+  <style>
+    h1 { font-size: 2.4rem; font-weight: normal; margin-bottom: 0.4rem; color: #f0f0f0; }
+    .tagline { color: #888; font-size: 1rem; margin-bottom: 2.5rem; }
+    p { font-size: 1rem; color: #ccc; max-width: 560px; margin-bottom: 1.2rem; }
+    .projects { margin-top: 3rem; }
+    .projects h2 { font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; color: #555; margin-bottom: 1.2rem; }
+    .project-card {
+      border: 1px solid #222;
+      border-radius: 6px;
+      padding: 1.4rem 1.6rem;
+      max-width: 420px;
+      transition: border-color 0.2s;
+    }
+    .project-card:hover { border-color: #444; }
+    .project-card h3 { font-size: 1.05rem; color: #e8e8e8; margin-bottom: 0.3rem; }
+    .project-card p { font-size: 0.9rem; color: #888; margin: 0; }
+  </style>
+
+  <h1>Anton Bargman</h1>
+  <p class="tagline">Software Engineer &amp; Game Developer</p>
+
+  <p>
+    I build software by day and games by night. I'm interested in systems design,
+    clean code, and the kind of games you can pick up for five minutes or five hours.
+  </p>
+  <p>
+    Currently working on a card-based roguelike in my spare time.
+  </p>
+
+  <div class="projects">
+    <h2>Projects</h2>
+    <a href="/tileshire" style="display:block; text-decoration:none;">
+      <div class="project-card">
+        <h3>Tileshire</h3>
+        <p>A card-based roguelike game. Work in progress.</p>
+      </div>
+    </a>
+  </div>
+</Layout>
