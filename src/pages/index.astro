@@ -18,6 +18,8 @@ import Layout from '../layouts/Layout.astro';
     .project-card:hover { border-color: #444; }
     .project-card h3 { font-size: 1.05rem; color: #e8e8e8; margin-bottom: 0.3rem; }
     .project-card p { font-size: 0.9rem; color: #888; margin: 0; }
+    .roles { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+    .roles .project-card { max-width: none; height: 100%; box-sizing: border-box; }
     .role-card { display: flex; align-items: center; gap: 1.2rem; }
     .role-card:hover { border-color: #4fc79a; }
     .role-card .mark { width: 44px; height: auto; flex-shrink: 0; }
@@ -53,23 +55,26 @@ import Layout from '../layouts/Layout.astro';
 
   <div class="projects">
     <h2>Work</h2>
-    <div class="project-card role-card" style="margin-bottom: 1rem;">
-      <div>
-        <div class="meta">Engineering Manager</div>
-        <h3>Meetsmore</h3>
-        <p>Promoted from software engineer to Engineering Manager.</p>
-      </div>
-    </div>
-    <a href="https://sei-dr.com/" style="display:block; text-decoration:none;">
-      <div class="project-card role-card">
-        <img src="/seidr-mark.svg" alt="" class="mark" />
-        <div>
-          <div class="meta">CTO · Part-time</div>
-          <h3>Seidr</h3>
-          <p>Trust your hybrid workforce. Governing human teams and AI agents with real-time organizational intelligence.</p>
+    <div class="roles">
+      <a href="https://meetsmore.com/" style="display:block; text-decoration:none;">
+        <div class="project-card role-card">
+          <div>
+            <div class="meta">Engineering Manager</div>
+            <h3>Meetsmore</h3>
+          </div>
         </div>
-      </div>
-    </a>
+      </a>
+      <a href="https://sei-dr.com/" style="display:block; text-decoration:none;">
+        <div class="project-card role-card">
+          <img src="/seidr-mark.svg" alt="" class="mark" />
+          <div>
+            <div class="meta">CTO · Part-time</div>
+            <h3>Seidr</h3>
+            <p>Trust your hybrid workforce. Governing human teams and AI agents with real-time organizational intelligence.</p>
+          </div>
+        </div>
+      </a>
+    </div>
   </div>
 
   <div class="projects">
@@ -77,7 +82,7 @@ import Layout from '../layouts/Layout.astro';
     <a href="/tileshire" style="display:block; text-decoration:none;">
       <div class="project-card">
         <h3>Tile Tally</h3>
-        <p>A card-based roguelike game. Work in progress.</p>
+        <p>A card-based roguelike game.</p>
       </div>
     </a>
   </div>

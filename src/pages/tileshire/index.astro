@@ -23,6 +23,10 @@ import Layout from '../../layouts/Layout.astro';
     .links a { font-size: 0.88rem; color: #888; display: flex; }
     .links a:hover { color: #c8a96e; }
     .links svg { width: 20px; height: 20px; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 0.8rem; }
+    .gallery a { display: block; border: 1px solid #222; border-radius: 4px; overflow: hidden; transition: border-color 0.2s; }
+    .gallery a:hover { border-color: #c8a96e; }
+    .gallery img { display: block; width: 100%; height: auto; }
     .widget-wrapper { max-width: 552px; overflow: hidden; }
     .widget-wrapper iframe { max-width: 100%; }
   </style>
@@ -61,6 +65,17 @@ import Layout from '../../layouts/Layout.astro';
       Random draws, shop choices, and relic combinations mean no two shires grow the
       same way twice.
     </p>
+  </section>
+
+  <section>
+    <h2>Screenshots</h2>
+    <div class="gallery">
+      <a href="/screenshot1.jpg"><img src="/screenshot1.jpg" alt="Tile Tally screenshot 1" loading="lazy" /></a>
+      <a href="/screenshot2.jpg"><img src="/screenshot2.jpg" alt="Tile Tally screenshot 2" loading="lazy" /></a>
+      <a href="/screenshot3.jpg"><img src="/screenshot3.jpg" alt="Tile Tally screenshot 3" loading="lazy" /></a>
+      <a href="/screenshot4.jpg"><img src="/screenshot4.jpg" alt="Tile Tally screenshot 4" loading="lazy" /></a>
+      <a href="/screenshot5.jpg"><img src="/screenshot5.jpg" alt="Tile Tally screenshot 5" loading="lazy" /></a>
+    </div>
   </section>
 
   <section>
