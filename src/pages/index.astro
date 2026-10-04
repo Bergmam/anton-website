@@ -5,7 +5,7 @@ import Layout from '../layouts/Layout.astro';
   <style>
     h1 { font-size: 2.4rem; font-weight: normal; margin-bottom: 0.4rem; color: #f0f0f0; }
     .tagline { color: #888; font-size: 1rem; margin-bottom: 2.5rem; }
-    p { font-size: 1rem; color: #ccc; max-width: 560px; margin-bottom: 1.2rem; }
+    p { font-size: 1rem; color: #ccc; max-width: 680px; margin-bottom: 1.2rem; }
     .projects { margin-top: 3rem; }
     .projects h2 { font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; color: #555; margin-bottom: 1.2rem; }
     .project-card {
@@ -21,6 +21,7 @@ import Layout from '../layouts/Layout.astro';
     .roles { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
     .roles .project-card { max-width: none; height: 100%; box-sizing: border-box; }
     .role-card { display: flex; align-items: center; gap: 1.2rem; }
+    .role-card .mark.logo { width: 90px; }
     .role-card:hover { border-color: #4fc79a; }
     .role-card .mark { width: 44px; height: auto; flex-shrink: 0; }
     .role-card .meta { font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: #4fc79a; margin-bottom: 0.3rem; }
@@ -79,12 +80,14 @@ import Layout from '../layouts/Layout.astro';
 
   <div class="projects">
     <h2>Projects</h2>
-    <a href="/tileshire" style="display:block; text-decoration:none;">
-      <div class="project-card">
-        <h3>Tile Tally</h3>
-        <p>A card-based roguelike game.</p>
-      </div>
-    </a>
+    <div class="roles">
+      <a href="/tileshire" style="display:block; text-decoration:none;">
+        <div class="project-card role-card">
+          <img src="/TileTallyLogo.png" alt="Tile Tally" class="mark logo" />
+          <p>A card-based roguelike game.</p>
+        </div>
+      </a>
+    </div>
   </div>
 
   <div class="social">
