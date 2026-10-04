@@ -18,6 +18,10 @@ import Layout from '../layouts/Layout.astro';
     .project-card:hover { border-color: #444; }
     .project-card h3 { font-size: 1.05rem; color: #e8e8e8; margin-bottom: 0.3rem; }
     .project-card p { font-size: 0.9rem; color: #888; margin: 0; }
+    .role-card { display: flex; align-items: center; gap: 1.2rem; }
+    .role-card:hover { border-color: #4fc79a; }
+    .role-card .mark { width: 44px; height: auto; flex-shrink: 0; }
+    .role-card .meta { font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: #4fc79a; margin-bottom: 0.3rem; }
     .intro { display: flex; align-items: center; gap: 2rem; margin-bottom: 2.5rem; }
     .avatar { width: 50%; aspect-ratio: 1; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
     .social { margin-top: 3rem; display: flex; gap: 1rem; }
@@ -30,22 +34,49 @@ import Layout from '../layouts/Layout.astro';
     <img src="/me.jpg" alt="Anton Bergman" class="avatar" />
     <div>
       <h1>Anton Bergman</h1>
-      <p class="tagline">Software Engineer, Manager &amp; Game Developer</p>
+      <p class="tagline">Engineering Manager, CTO &amp; Game Developer</p>
     </div>
   </div>
 
   <p>
-    Software Engineering manager and game dev. 
+    Engineering Manager at Meetsmore.
   </p>
   <p>
-    Currently working on a card-based roguelike named <a href="/tileshire">Tileshire</a>.
+    Also part-time CTO at <a href="https://sei-dr.com/">Seidr</a>, helping organizations govern
+    hybrid teams of humans and AI agents.
   </p>
+  <p>
+    Outside of that, I'm working on a card-based roguelike named <a href="/tileshire">Tile Tally</a>
+    (<a href="https://store.steampowered.com/app/5184640/Tile_Tally/">Steam</a> ·
+    <a href="https://store.steampowered.com/app/5316620/Tile_Tally_Demo/">Demo</a>).
+  </p>
+
+  <div class="projects">
+    <h2>Work</h2>
+    <div class="project-card role-card" style="margin-bottom: 1rem;">
+      <div>
+        <div class="meta">Engineering Manager</div>
+        <h3>Meetsmore</h3>
+        <p>Promoted from software engineer to Engineering Manager.</p>
+      </div>
+    </div>
+    <a href="https://sei-dr.com/" style="display:block; text-decoration:none;">
+      <div class="project-card role-card">
+        <img src="/seidr-mark.svg" alt="" class="mark" />
+        <div>
+          <div class="meta">CTO · Part-time</div>
+          <h3>Seidr</h3>
+          <p>Trust your hybrid workforce. Governing human teams and AI agents with real-time organizational intelligence.</p>
+        </div>
+      </div>
+    </a>
+  </div>
 
   <div class="projects">
     <h2>Projects</h2>
     <a href="/tileshire" style="display:block; text-decoration:none;">
       <div class="project-card">
-        <h3>Tileshire</h3>
+        <h3>Tile Tally</h3>
         <p>A card-based roguelike game. Work in progress.</p>
       </div>
     </a>
